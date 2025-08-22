@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { UnifiedTool } from './registry.js';
-import { executeGeminiCLI, processChangeModeOutput } from '../utils/geminiExecutor.js';
+import { executeQwenCLI, processChangeModeOutput } from '../utils/geminiExecutor.js';
 import { 
   ERROR_MESSAGES, 
   STATUS_MESSAGES
@@ -35,7 +35,7 @@ export const askQwenTool: UnifiedTool = {
       );
     }
     
-    const result = await executeGeminiCLI(
+    const result = await executeQwenCLI(
       prompt as string,
       model as string | undefined,
       !!sandbox,

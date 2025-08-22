@@ -12,7 +12,7 @@ import { formatChangeModeResponse, summarizeChangeModeEdits } from './changeMode
 import { chunkChangeModeEdits } from './changeModeChunker.js';
 import { cacheChunks, getChunks } from './chunkCache.js';
 
-export async function executeGeminiCLI(
+export async function executeQwenCLI(
   prompt: string,
   model?: string,
   sandbox?: boolean,
@@ -164,7 +164,7 @@ export async function processChangeModeOutput(
   const edits = parseChangeModeOutput(rawResult);
   
   if (edits.length === 0) {
-    return `No edits found in Gemini's response. Please ensure Gemini uses the OLD/NEW format. \n\n+ ${rawResult}`;
+    return `No edits found in Qwen's response. Please ensure Qwen uses the OLD/NEW format. \n\n+ ${rawResult}`;
   }
 
   // Validate edits
