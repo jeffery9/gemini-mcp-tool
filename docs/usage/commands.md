@@ -4,46 +4,78 @@ Complete list of available commands and their usage.
 
 ## Slash Commands
 
-### `/gemini-cli:analyze`
+### `/qwen-code:analyze`
 Analyze files or ask questions about code.
 
 ```
-/gemini-cli:analyze @file.js explain this code
-/gemini-cli:analyze @src/*.ts find security issues
-/gemini-cli:analyze how do I implement authentication?
+/qwen-code:analyze @file.js explain this code
+/qwen-code:analyze @src/*.ts find security issues
+/qwen-code:analyze how do I implement authentication?
 ```
 
-### `/gemini-cli:sandbox`
+### `/qwen-code:sandbox`
 Execute code in a safe environment.
 
 ```
-/gemini-cli:sandbox create a Python fibonacci generator
-/gemini-cli:sandbox test this function: [code]
+/qwen-code:sandbox create a Python fibonacci generator
+/qwen-code:sandbox test this function: [code]
 ```
 
-### `/gemini-cli:help`
+### `/qwen-code:help`
 Show help information and available tools.
 
 ```
-/gemini-cli:help
-/gemini-cli:help analyze
+/qwen-code:help
+/qwen-code:help analyze
 ```
 
-### `/gemini-cli:ping`
-Test connectivity with Gemini.
+### `/qwen-code:ping`
+Test connectivity with Qwen.
 
 ```
-/gemini-cli:ping
-/gemini-cli:ping "Custom message"
+/qwen-code:ping
+/qwen-code:ping "Custom message"
+```
+
+### `/qwen-code:generate-code`
+Generate code from natural language descriptions.
+
+```
+/qwen-code:generate-code task="create a React component" language="javascript" framework="React"
+/qwen-code:generate-code task="write a Python function to sort a list" language="python"
+```
+
+### `/qwen-code:review-code`
+Review code for quality, performance, and security issues.
+
+```
+/qwen-code:review-code code="function add(a, b) { return a + b; }" language="javascript" focus="all"
+/qwen-code:review-code code="@file.js" language="javascript" focus="security"
+```
+
+### `/qwen-code:refactor-code`
+Refactor code to improve its structure.
+
+```
+/qwen-code:refactor-code code="function add(a, b) { return a + b; }" language="javascript" goal="improve readability"
+/qwen-code:refactor-code code="@file.js" language="javascript"
+```
+
+### `/qwen-code:explain-code`
+Explain how code works.
+
+```
+/qwen-code:explain-code code="function add(a, b) { return a + b; }" language="javascript" detailLevel="detailed"
+/qwen-code:explain-code code="@complex-function.js" language="javascript" detailLevel="comprehensive"
 ```
 
 ## Command Structure
 
 ```
-/gemini-cli:<tool> [options] <arguments>
+/qwen-code:<tool> [options] <arguments>
 ```
 
-- **tool**: The action to perform (analyze, sandbox, help, ping)
+- **tool**: The action to perform (analyze, sandbox, help, ping, generate-code, review-code, refactor-code, explain-code)
 - **options**: Optional flags (coming soon)
 - **arguments**: Input text, files, or questions
 
@@ -51,9 +83,15 @@ Test connectivity with Gemini.
 
 Instead of slash commands, you can use natural language:
 
-- "Use gemini to analyze index.js"
-- "Ask gemini to create a test file"
-- "Have gemini explain this error"
+- "Use qwen to analyze index.js"
+- "Ask qwen to create a test file"
+- "Have qwen explain this error"
+
+For programming tasks:
+- "Use qwen to generate a React component"
+- "Ask qwen to review this code for security issues"
+- "Have qwen refactor this function to improve readability"
+- "Can qwen explain how this algorithm works?"
 
 ## File Patterns
 

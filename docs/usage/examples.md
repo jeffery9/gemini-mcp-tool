@@ -1,12 +1,12 @@
 # Real-World Examples
 
-Practical examples of using Gemini MCP Tool in development workflows.
+Practical examples of using Qwen MCP Tool in development workflows.
 
 ## Code Review
 
 ### Reviewing a Pull Request
 ```
-/gemini-cli:analyze @feature/new-api/*.js review these changes for:
+/qwen-code:analyze @feature/new-api/*.js review these changes for:
 - Security issues
 - Performance concerns  
 - Code style consistency
@@ -15,27 +15,27 @@ Practical examples of using Gemini MCP Tool in development workflows.
 
 ### Pre-commit Check
 ```
-"Gemini, check my staged changes before I commit"
+"Qwen, check my staged changes before I commit"
 ```
 
 ## Debugging
 
 ### Analyzing Error Logs
 ```
-/gemini-cli:analyze @logs/error.log @src/api/handler.js 
+/qwen-code:analyze @logs/error.log @src/api/handler.js 
 why am I getting "undefined is not a function" errors?
 ```
 
 ### Stack Trace Analysis
 ```
-@crash-report.txt gemini, what caused this crash and how do I fix it?
+@crash-report.txt qwen, what caused this crash and how do I fix it?
 ```
 
 ## Architecture Analysis
 
 ### Understanding a New Codebase
 ```
-/gemini-cli:analyze @package.json @src/**/*.js @README.md
+/qwen-code:analyze @package.json @src/**/*.js @README.md
 give me an overview of this project's architecture
 ```
 
@@ -48,7 +48,7 @@ give me an overview of this project's architecture
 
 ### Generating API Docs
 ```
-/gemini-cli:analyze @routes/api/*.js generate OpenAPI documentation for these endpoints
+/qwen-code:analyze @routes/api/*.js generate OpenAPI documentation for these endpoints
 ```
 
 ### README Creation
@@ -60,7 +60,7 @@ give me an overview of this project's architecture
 
 ### Writing Tests
 ```
-/gemini-cli:analyze @src/utils/validator.js write comprehensive Jest tests for this module
+/qwen-code:analyze @src/utils/validator.js write comprehensive Jest tests for this module
 ```
 
 ### Test Coverage Analysis
@@ -72,7 +72,7 @@ give me an overview of this project's architecture
 
 ### Code Optimization
 ```
-/gemini-cli:analyze @src/data-processor.js this function is slow, how can I optimize it?
+/qwen-code:analyze @src/data-processor.js this function is slow, how can I optimize it?
 ```
 
 ### Pattern Implementation
@@ -84,7 +84,7 @@ give me an overview of this project's architecture
 
 ### Understanding Concepts
 ```
-/gemini-cli:sandbox show me how OAuth 2.0 works with a working example
+/qwen-code:sandbox show me how OAuth 2.0 works with a working example
 ```
 
 ### Best Practices
@@ -96,7 +96,7 @@ give me an overview of this project's architecture
 
 ### Framework Upgrade
 ```
-/gemini-cli:analyze @package.json @src/**/*.js 
+/qwen-code:analyze @package.json @src/**/*.js 
 what changes are needed to upgrade from Express 4 to Express 5?
 ```
 
@@ -109,7 +109,7 @@ what changes are needed to upgrade from Express 4 to Express 5?
 
 ### Vulnerability Scan
 ```
-/gemini-cli:analyze @src/**/*.js @package.json 
+/qwen-code:analyze @src/**/*.js @package.json 
 perform a security audit and identify potential vulnerabilities
 ```
 
@@ -122,7 +122,7 @@ perform a security audit and identify potential vulnerabilities
 
 ### Bottleneck Detection
 ```
-/gemini-cli:analyze @src/routes/*.js @src/middleware/*.js
+/qwen-code:analyze @src/routes/*.js @src/middleware/*.js
 identify performance bottlenecks in the request pipeline
 ```
 
@@ -136,24 +136,40 @@ identify performance bottlenecks in the request pipeline
 ### Full Stack Review
 ```bash
 # 1. Architecture overview
-/gemini-cli:analyze @package.json @src/index.js @client/App.jsx 
+/qwen-code:analyze @package.json @src/index.js @client/App.jsx 
 explain how the frontend and backend connect
 
 # 2. API Security
-/gemini-cli:analyze @routes/api/*.js @middleware/auth.js 
+/qwen-code:analyze @routes/api/*.js @middleware/auth.js 
 review API security implementation
 
 # 3. Database optimization
-/gemini-cli:analyze @models/*.js @db/queries/*.sql 
+/qwen-code:analyze @models/*.js @db/queries/*.sql 
 suggest database optimizations
 
 # 4. Frontend performance
-/gemini-cli:analyze @client/**/*.jsx @client/**/*.css 
+/qwen-code:analyze @client/**/*.jsx @client/**/*.css 
 how can I improve frontend performance?
 
 # 5. Test coverage
-/gemini-cli:analyze @src/**/*.js @test/**/*.test.js 
+/qwen-code:analyze @src/**/*.js @test/**/*.test.js 
 what critical paths lack test coverage?
+```
+
+### Programming Task Examples
+
+```bash
+# 1. Code Generation
+/qwen-code:generate-code task="create a React component for a user profile card" language="javascript" framework="React"
+
+# 2. Code Review
+/qwen-code:review-code code="@src/auth/*.js" language="javascript" focus="security"
+
+# 3. Code Refactoring
+/qwen-code:refactor-code code="@legacy/script.js" language="javascript" goal="convert to modern ES6 syntax"
+
+# 4. Code Explanation
+/qwen-code:explain-code code="@complex-algorithm.js" language="javascript" detailLevel="comprehensive"
 ```
 
 ## Tips for Effective Usage

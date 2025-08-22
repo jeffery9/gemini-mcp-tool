@@ -1,6 +1,6 @@
 # Best Practices
 
-Get the most out of Gemini MCP Tool with these proven practices.
+Get the most out of Qwen MCP Tool with these proven practices.
 
 ## File Selection
 
@@ -37,6 +37,8 @@ Include configuration with implementation:
 "identify performance bottlenecks and suggest optimizations"
 "check for SQL injection vulnerabilities"
 "explain the authentication flow step by step"
+"generate a React component for user authentication"
+"review this code for security best practices"
 ```
 
 ### Provide Success Criteria
@@ -49,10 +51,9 @@ Include configuration with implementation:
 
 ## Token Management
 
-### Gemini Model Selection
-- **Quick tasks**: Use Flash (1M tokens)
-- **Full analysis**: Use Pro (2M tokens)
-- **Simple queries**: Use Flash-8B
+### Qwen Model Selection
+- **Quick tasks**: Use Turbo
+- **Full analysis**: Use Plus
 
 ### Efficient File Inclusion
 ```bash
@@ -92,6 +93,16 @@ continue from our last discussion
 "500 errors on /user endpoint after deployment"
 ```
 
+### Include Code for Review
+```bash
+# Good
+@src/auth/*.js "review for security vulnerabilities"
+
+# Better
+@src/auth/*.js @package.json @.env.example
+"review for security vulnerabilities, including dependency checks"
+```
+
 ### Provide Stack Traces
 Always include full error messages and stack traces when debugging.
 
@@ -116,11 +127,35 @@ Always include full error messages and stack traces when debugging.
 @existing-service.js "create a similar service for products"
 ```
 
+### Programming Task Examples
+```bash
+# Code Generation
+"generate a Python function that:
+- takes a list of dictionaries
+- sorts them by a specified key
+- handles edge cases
+- includes docstring and type hints"
+
+# Code Review
+"review this JavaScript code for:
+- potential security vulnerabilities
+- performance issues
+- code style consistency
+- adherence to best practices"
+
+# Code Refactoring
+"refactor this code to:
+- improve readability
+- reduce complexity
+- follow SOLID principles
+- add proper error handling"
+```
+
 ## Security Reviews
 
 ### Comprehensive Security Checks
 ```bash
-/gemini-cli:analyze @src/**/*.js @package.json @.env.example
+/qwen-code:analyze @src/**/*.js @package.json @.env.example
 - Check for hardcoded secrets
 - Review authentication logic
 - Identify OWASP vulnerabilities
@@ -142,6 +177,12 @@ Always include full error messages and stack traces when debugging.
 "reduce memory usage without sacrificing features"
 ```
 
+### Programming Task Trade-offs
+```bash
+"generate code that is easy to understand, even if it's slightly less efficient"
+"refactor this code to improve performance, but keep it maintainable"
+```
+
 ## Documentation
 
 ### Context-Aware Documentation
@@ -154,6 +195,13 @@ Always include full error messages and stack traces when debugging.
 ```bash
 @docs/style-guide.md @src/new-feature.js 
 "document following our conventions"
+```
+
+### Programming Documentation
+```bash
+@src/new-module.js @docs/style-guide.md
+"document this new module following our conventions"
+"generate API documentation for this Python module"
 ```
 
 ## Common Pitfalls to Avoid
@@ -173,6 +221,10 @@ Always include full error messages and stack traces when debugging.
 ### 4. Vague Success Criteria
 ❌ "make it better"
 ✅ "improve performance to handle 1000 requests/second"
+
+### 5. Unclear Programming Tasks
+❌ "generate code"
+✅ "generate a Python function to validate email addresses with proper error handling"
 
 ## Workflow Integration
 
@@ -199,6 +251,33 @@ Check for:
 - Authentication bypasses
 - Rate limiting
 - Input validation
+```
+
+### 2. Create Programming Templates
+Save common programming task templates:
+```bash
+# code-review-template.txt
+Review this code for:
+- Security vulnerabilities
+- Performance issues
+- Code style consistency
+- Best practices
+- Potential bugs
+```
+
+### 3. Chain Operations
+```bash
+"First analyze the bug" → 
+"Now write a fix" → 
+"Create tests for the fix" →
+"Update documentation"
+```
+
+### 4. Learn from Patterns
+When Qwen suggests improvements, ask:
+```bash
+"explain why this approach is better"
+"show me more examples of this pattern"
 ```
 
 ### 2. Chain Operations

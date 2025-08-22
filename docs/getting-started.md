@@ -32,18 +32,18 @@
 Before installing, ensure you have:
 
 - **[Node.js](https://nodejs.org/)** v16.0.0 or higher
-- **[Google Gemini CLI](https://github.com/google-gemini/gemini-cli)** installed and configured on your system
+- **[Qwen Code](https://help.aliyun.com/zh/qwen/)** installed and configured on your system
 - **[Claude Desktop](https://claude.ai/download)** or **[Claude Code](https://www.anthropic.com/claude-code)** with MCP support
 
 
 ## Claude Code (Recommended)
-::: warning 💡 gemini-mcp-tool is tested extensively with claude code
+::: warning 💡 qwen-mcp-tool is tested extensively with claude code
 :::
 Claude Code offers the smoothest experience.
 
 ```bash
 # install for claude code
-claude mcp add gemini-cli -- npx -y gemini-mcp-tool
+claude mcp add qwen-code -- npx -y qwen-mcp-tool
 
 # Start Claude Code - it's automatically configured!
 claude
@@ -70,9 +70,9 @@ For Claude Desktop users, add this to your configuration file:
 ```json
 {
   "mcpServers": {
-    "gemini-cli": {
+    "qwen-code": {
       "command": "npx",
-      "args": ["-y", "gemini-mcp-tool"]
+      "args": ["-y", "qwen-mcp-tool"]
     }
   }
 }
@@ -91,7 +91,7 @@ Gemini MCP Tool works with 40+ MCP clients! Here are the common configuration pa
   "transport": {
     "type": "stdio",
     "command": "npx",
-    "args": ["-y", "gemini-mcp-tool"]
+    "args": ["-y", "qwen-mcp-tool"]
   }
 }
 ```
@@ -105,11 +105,11 @@ Gemini MCP Tool works with 40+ MCP clients! Here are the common configuration pa
 
 ```json
 {
-  "gemini-cli": {
+  "qwen-code": {
     "command": "npx",
     "args": [
       "-y",
-      "gemini-mcp-tool"
+      "qwen-mcp-tool"
     ],
     "env": {},
     "working_directory": null,
@@ -122,10 +122,10 @@ Gemini MCP Tool works with 40+ MCP clients! Here are the common configuration pa
 </details>
 ### Generic Setup Steps
 
-1. **Install Prerequisites**: Ensure [Gemini CLI](https://github.com/google-gemini/gemini-cli) is installed
+1. **Install Prerequisites**: Ensure [Qwen Code](https://help.aliyun.com/zh/qwen/) is installed
 2. **Add Server Config**: Use the STDIO transport pattern above
 3. **Restart Client**: Most clients require restart after config changes
-4. **Test Connection**: Try `/gemini-cli:ping` or natural language commands
+4. **Test Connection**: Try `/qwen-code:ping` or natural language commands
 
 ## Verify Your Setup
 
@@ -134,17 +134,17 @@ Once configured, test that everything is working:
 ### 1. Basic Connectivity Test
 Type in Claude:
 ```
-/gemini-cli:ping "Hello from Gemini MCP!"
+/qwen-code:ping "Hello from Qwen MCP!"
 ```
 
 ### 2. Test File Analysis
 ```
-/gemini-cli:analyze @README.md summarize this file
+/qwen-code:analyze @README.md summarize this file
 ```
 
 ### 3. Test Sandbox Mode
 ```
-/gemini-cli:sandbox create a simple Python hello world script
+/qwen-code:sandbox create a simple Python hello world script
 ```
 
 ## Quick Command Reference
@@ -152,16 +152,23 @@ Type in Claude:
 Once installed, you can use natural language or slash commands:
 
 ### Natural Language Examples
-- "use gemini to explain index.html"
-- "understand the massive project using gemini"
-- "ask gemini to search for latest news"
+- "use qwen to explain index.html"
+- "understand the massive project using qwen"
+- "ask qwen to search for latest news"
 
 ### Slash Commands in Claude Code
-Type `/gemini-cli` and these commands will appear:
-- `/gemini-cli:analyze` - Analyze files or ask questions
-- `/gemini-cli:sandbox` - Safe code execution
-- `/gemini-cli:help` - Show help information
-- `/gemini-cli:ping` - Test connectivity
+Type `/qwen-code` and these commands will appear:
+- `/qwen-code:analyze` - Analyze files or ask questions
+- `/qwen-code:sandbox` - Safe code execution
+- `/qwen-code:help` - Show help information
+- `/qwen-code:ping` - Test connectivity
+
+### Enhanced Programming Commands
+Qwen MCP Tool also provides specialized programming commands:
+- `/qwen-code:generate-code` - Generate code from natural language descriptions
+- `/qwen-code:review-code` - Review code for quality, performance, and security
+- `/qwen-code:refactor-code` - Refactor code to improve its structure
+- `/qwen-code:explain-code` - Explain how code works
 
 ## Need a Different Client?
 
@@ -175,10 +182,11 @@ Don't see your MCP client listed? Gemini MCP Tool uses standard MCP protocol and
 
 ## Common Issues
 
-### "Command not found: gemini"
-Make sure you've installed the Gemini CLI:
+### "Command not found: qwen"
+Make sure you've installed Qwen Code:
 ```bash
-npm install -g @google/gemini-cli
+# Install Qwen Code CLI
+# Please refer to the official Qwen documentation for installation instructions
 ```
 
 ### "MCP server not responding"
