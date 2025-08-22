@@ -31,6 +31,6 @@ export const helpTool: UnifiedTool = {
   },
   category: 'simple',
   execute: async (args, onProgress) => {
-    return executeCommand("gemini", ["-help"], onProgress);
+    return executeCommand("qwen", ["-help"], onProgress);
   }
 };
