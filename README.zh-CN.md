@@ -25,6 +25,35 @@ Qwen Code 专为编程任务而设计，提供代码生成、审查、重构和�
 1. **[Node.js](https://nodejs.org/)** (v16.0.0 或更高版本)
 2. **[Qwen Code](https://github.com/QwenLM/qwen-code.git)** 已安装并配置（命令行工具：`qwen`）
 
+## 安装选项
+
+有几种方式可以安装和使用此工具：
+
+### 1. 使用 npx 直接运行（推荐）
+无需安装，直接从 GitHub 运行：
+```bash
+claude mcp add qwen-code -- npx jamubc/qwen-mcp-tool
+```
+
+### 2. 克隆并本地安装
+```bash
+# 克隆仓库
+git clone https://github.com/jamubc/qwen-mcp-tool.git
+cd qwen-mcp-tool
+
+# 安装依赖
+npm install
+
+# 构建项目
+npm run build
+
+# 全局链接（或安装）
+npm link
+```
+
+### 3. 下载发布版本
+访问我们的 [GitHub Releases](https://github.com/jamubc/qwen-mcp-tool/releases) 页面下载最新版本。
+
 ### Qwen Code 编程能力
 
 Qwen Code 提供高级编程能力：

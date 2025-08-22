@@ -44,6 +44,35 @@ Before using this tool, ensure you have:
 1. **[Node.js](https://nodejs.org/)** (v16.0.0 or higher)
 2. **[Qwen Code](https://github.com/QwenLM/qwen-code.git)** installed and configured (command-line tool: `qwen`)
 
+## Installation Options
+
+There are several ways to install and use this tool:
+
+### 1. Direct Run with npx (Recommended)
+No installation needed - runs directly from GitHub:
+```bash
+claude mcp add qwen-code -- npx jamubc/qwen-mcp-tool
+```
+
+### 2. Clone and Install Locally
+```bash
+# Clone the repository
+git clone https://github.com/jamubc/qwen-mcp-tool.git
+cd qwen-mcp-tool
+
+# Install dependencies
+npm install
+
+# Build the project
+npm run build
+
+# Link globally (or install)
+npm link
+```
+
+### 3. Download Release
+Visit our [GitHub Releases](https://github.com/jamubc/qwen-mcp-tool/releases) page to download the latest version.
+
 ### Qwen Code Programming Capabilities
 
 Qwen Code offers advanced programming capabilities:
