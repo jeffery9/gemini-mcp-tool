@@ -1,33 +1,33 @@
 
 
 // Logging
-export const LOG_PREFIX = "[GMCPT]";
+export const LOG_PREFIX = "[QMCPT]";
 
 // Error messages
 export const ERROR_MESSAGES = {
-  QUOTA_EXCEEDED: "Quota exceeded for quota metric 'Gemini 2.5 Pro Requests'",
-  QUOTA_EXCEEDED_SHORT: "⚠️ Gemini 2.5 Pro daily quota exceeded. Please retry with model: 'gemini-2.5-flash'",
+  QUOTA_EXCEEDED: "Quota exceeded for quota metric 'Qwen Plus Requests'",
+  QUOTA_EXCEEDED_SHORT: "⚠️ Qwen Plus daily quota exceeded. Please retry with model: 'qwen-turbo'",
   TOOL_NOT_FOUND: "not found in registry",
   NO_PROMPT_PROVIDED: "Please provide a prompt for analysis. Use @ syntax to include files (e.g., '@largefile.js explain what this does') or ask general questions",
 } as const;
 
 // Status messages
 export const STATUS_MESSAGES = {
-  QUOTA_SWITCHING: "🚫 Gemini 2.5 Pro quota exceeded, switching to Flash model...",
-  FLASH_RETRY: "⚡ Retrying with Gemini 2.5 Flash...",
-  FLASH_SUCCESS: "✅ Flash model completed successfully",
-  SANDBOX_EXECUTING: "🔒 Executing Gemini CLI command in sandbox mode...",
-  GEMINI_RESPONSE: "Gemini response:",
+  QUOTA_SWITCHING: "🚫 Qwen Plus quota exceeded, switching to Turbo model...",
+  FLASH_RETRY: "⚡ Retrying with Qwen Turbo...",
+  FLASH_SUCCESS: "✅ Turbo model completed successfully",
+  SANDBOX_EXECUTING: "🔒 Executing Qwen CLI command in sandbox mode...",
+  GEMINI_RESPONSE: "Qwen response:",
   // Timeout prevention messages
   PROCESSING_START: "🔍 Starting analysis (may take 5-15 minutes for large codebases)",
-  PROCESSING_CONTINUE: "⏳ Still processing... Gemini is working on your request",
+  PROCESSING_CONTINUE: "⏳ Still processing... Qwen is working on your request",
   PROCESSING_COMPLETE: "✅ Analysis completed successfully",
 } as const;
 
 // Models
 export const MODELS = {
-  PRO: "gemini-2.5-pro",
-  FLASH: "gemini-2.5-flash",
+  PRO: "qwen-plus",
+  FLASH: "qwen-turbo",
 } as const;
 
 // MCP Protocol Constants
@@ -61,7 +61,7 @@ export const PROTOCOL = {
 export const CLI = {
   // Command names
   COMMANDS: {
-    GEMINI: "gemini",
+    GEMINI: "qwen",
     ECHO: "echo",
   },
   // Command flags

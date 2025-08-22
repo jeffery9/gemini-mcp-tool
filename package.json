@@ -1,11 +1,11 @@
 {
-  "name": "gemini-mcp-tool",
+  "name": "qwen-mcp-tool",
   "version": "1.1.4",
-  "description": "MCP server for Gemini CLI integration",
+  "description": "MCP server for Qwen CLI integration",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "gemini-mcp": "dist/index.js"
+    "qwen-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -22,7 +22,7 @@
   "keywords": [
     "mcp",
     "modelcontextprotocol",
-    "gemini",
+    "qwen",
     "cli",
     "ai",
     "llm"
@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamubc/gemini-mcp-tool.git"
+    "url": "git+https://github.com/jamubc/qwen-mcp-tool.git"
   },
   "bugs": {
-    "url": "https://github.com/jamubc/gemini-mcp-tool/issues"
+    "url": "https://github.com/jamubc/qwen-mcp-tool/issues"
   },
-  "homepage": "https://github.com/jamubc/gemini-mcp-tool#readme",
+  "homepage": "https://github.com/jamubc/qwen-mcp-tool#readme",
   "engines": {
     "node": ">=16.0.0"
   },
