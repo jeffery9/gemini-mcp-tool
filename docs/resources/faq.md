@@ -2,8 +2,8 @@
 
 ## General
 
-### What is Gemini MCP Tool?
-A bridge between Claude Desktop and Google's Gemini AI, enabling you to use Gemini's powerful capabilities directly within Claude.
+### What is Qwen MCP Tool?
+A bridge between Claude Desktop and Alibaba's Qwen AI, enabling you to use Qwen's powerful capabilities directly within Claude.
 
 ### Does it support windows?
 Windows testing is underway, some users have reported success and other failures.
@@ -11,7 +11,7 @@ Windows testing is underway, some users have reported success and other failures
 ### Why use this instead of Gemini directly?
 - Integrated into your existing AI workflow
 - File analysis with @ syntax
-- Reduced context switching (gemini can store and recall memories!)
+- Reduced context switching (qwen can store and recall memories!)
 - Best of both: Leverages both AIs' strengths
 
 ### Is it free?
@@ -21,12 +21,9 @@ The tool is open source and free. You need:
 
 ## Setup
 
-### Do I need to install Gemini CLI separately?
-Yes, install it with:
-```bash
-npm install -g @google/gemini-cli
-```
-Then, run "gemini" and complete auth.
+### Do I need to install Qwen CLI separately?
+Yes, please refer to the official Qwen documentation for installation instructions.
+Then, run "qwen" and complete auth.
 
 ### Can I use this with Claude Code?
 Yes! It works with both Claude Desktop and Claude Code.

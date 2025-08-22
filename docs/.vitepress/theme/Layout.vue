@@ -40,7 +40,7 @@ const { Layout } = DefaultTheme
 const route = useRoute()
 const { frontmatter } = useData()
 
-const isHomePage = computed(() => route.path === '/' || route.path === '/gemini-mcp-tool/')
+const isHomePage = computed(() => route.path === '/' || route.path === '/qwen-mcp-tool/')
 const isFundingPage = computed(() => route.path.includes('/funding'))
 </script>
 

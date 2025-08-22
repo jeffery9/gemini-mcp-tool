@@ -1,33 +1,33 @@
 # File Analysis with @ Syntax
 
-One of the most powerful features of Gemini MCP Tool is the ability to analyze files using the `@` syntax.
+One of the most powerful features of Qwen MCP Tool is the ability to analyze files using the `@` syntax.
 
 ## Basic Usage
 
 ```
-/gemini-cli:analyze @index.js explain this code
+/qwen-code:analyze @index.js explain this code
 ```
 ```
-ask gemini to analyze the entire codebase and a comment block 
-to the top of every script, explaining that script. Use flash.
+ask qwen to analyze the entire codebase and a comment block 
+to the top of every script, explaining that script. Use turbo.
 ```
 ```
-Ask gemini to explain @index.js by reading the entire codebase first
+Ask qwen to explain @index.js by reading the entire codebase first
 ```
 ```
-Ask gemini to analyze @src/ and provide bug fixes
+Ask qwen to analyze @src/ and provide bug fixes
 ```
 ```
 Ask gemini what the weather is like in new york
 ```
 ```
-...then use gemini to review your recent modifications
+...then use qwen to review your recent modifications
 ```
 ## Multiple Files
 
 Analyze multiple files in one request:
 ```
-/gemini-cli:analyze @src/server.js @src/client.js how do these interact?
+/qwen-code:analyze @src/server.js @src/client.js how do these interact?
 ```
 ```
 analyze @src/server.js @src/client.js and provide bug fixes
@@ -37,10 +37,10 @@ analyze @src/server.js @src/client.js and provide bug fixes
 
 Analyze whole directories:
 ```
-/gemini-cli:analyze @src/**/*.ts summarize the TypeScript architecture
+/qwen-code:analyze @src/**/*.ts summarize the TypeScript architecture
 ```
 ```
-analyze @main using gemini and determine the top 3 optimizations
+analyze @main using qwen and determine the top 3 optimizations
 ```
 
 ## Why @ Syntax?
@@ -76,15 +76,15 @@ analyze @main using gemini and determine the top 3 optimizations
 
 ### 4. Speak Naturally
 ```
-What does gemini think about that?
+What does qwen think about that?
 ```
 ```
-ask gemini to get a second opinion
+ask qwen to get a second opinion
 ```
 
 ## Token Optimization
 
-Gemini's massive context window allows analyzing entire codebases, saving claude tokens.
+Qwen's massive context window allows analyzing entire codebases, saving claude tokens.
 
 ## Examples
 

@@ -3,17 +3,17 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 
 export default withMermaid(
   defineConfig({
-    title: 'Gemini MCP Tool Documentation',
-    description: 'Bridge Gemini models with Claude Desktop',
-    base: '/gemini-mcp-tool/',
+    title: 'Qwen MCP Tool Documentation',
+    description: 'Bridge Qwen models with Claude Desktop',
+    base: '/qwen-mcp-tool/',
     
     // Force dark mode by default
     //appearance: 'dark',
     
     head: [
-      ['link', { rel: 'icon', href: '/gemini-mcp-tool/favicon.ico' }],
-      ['link', { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/gemini-mcp-tool/icon.png' }],
-      ['link', { rel: 'apple-touch-icon', sizes: '128x128', href: '/gemini-mcp-tool/icon.png' }]
+      ['link', { rel: 'icon', href: '/qwen-mcp-tool/favicon.ico' }],
+      ['link', { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/qwen-mcp-tool/icon.png' }],
+      ['link', { rel: 'apple-touch-icon', sizes: '128x128', href: '/qwen-mcp-tool/icon.png' }]
     ],
     
     themeConfig: {
@@ -66,7 +66,7 @@ export default withMermaid(
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/jamubc/gemini-mcp-tool' }
+      { icon: 'github', link: 'https://github.com/jamubc/qwen-mcp-tool' }
     ],
 
     footer: {

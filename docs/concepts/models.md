@@ -1,22 +1,22 @@
 # Model Selection
 
-Choose the right Gemini model for your task.
+Choose the right Qwen model for your task.
 
 ## Available Models
 
-### Gemini-2.5-pro
+### Qwen-Plus
 - **Best for**: Complex analysis, large codebases
-- **Context**: 2M tokens
+- **Context**: Large context window
 - **Use when**: Analyzing entire projects, architectural reviews, stronger reasoning
 
-### Gemini-2.5-flash
+### Qwen-Turbo
 - **Best for**: Quick responses, routine tasks
-- **Context**: 1M tokens  
+- **Context**: Large context window  
 - **Use when**: Fast code reviews, Analyzing entire projects, simple explanations
 
 ## Setting Models
 ```bash
-You need use natural language: "...using gemini flash"
+You need use natural language: "...using qwen turbo"
 ```
 ```bash
 You can also append with '-m' or ask specifically with 
@@ -29,7 +29,7 @@ You can also append with '-m' or ask specifically with
     "gemini-cli": {
       "command": "gemini-mcp",
       "env": {
-        "GEMINI_MODEL": "gemini-1.5-flash"
+        "QWEN_MODEL": "qwen-turbo"
       }
     }
   }
@@ -38,32 +38,25 @@ You can also append with '-m' or ask specifically with
 
 ### Per Request (Coming Soon)
 ```
-/gemini-cli:analyze --model=flash @file.js quick review
+/qwen-code:analyze --model=turbo @file.js quick review
 ```
 
 ## Model Comparison
 
 | Model | Speed | Context | Best Use Case |
 |-------|-------|---------|---------------|
-| Pro | Slower | 2M tokens | big ideas |
-| Flash | Fast | 1M tokens | quick, specific changes |
+| Plus | Slower | Large context | big ideas |
+| Turbo | Fast | Large context | quick, specific changes |
 
 ## Cost Optimization
 
-1. **Start with Flash** for most tasks
-2. **Use Pro** only when you need the full context
-3. **Flash-8B** for simple, repetitive tasks
-
-## Token Limits
-
-- **Pro**: ~2 million tokens (~500k lines of code)
-- **Flash**: ~1 million tokens (~250k lines of code)
-- **Flash-8B**: ~1 million tokens (~250k lines of code)
+1. **Start with Turbo** for most tasks
+2. **Use Plus** only when you need the full context
 
 ## Recommendations
 
-- **Code Review**: Flash
-- **Architecture Analysis**: Pro
-- **Quick Fixes**: Flash-8B
-- **Documentation**: Flash
-- **Security Audit**: Pro
+- **Code Review**: Turbo
+- **Architecture Analysis**: Plus
+- **Quick Fixes**: Turbo
+- **Documentation**: Turbo
+- **Security Audit**: Plus

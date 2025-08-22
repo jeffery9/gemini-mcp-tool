@@ -4,12 +4,12 @@ Execute code safely in an isolated environment.
 
 ## What is Sandbox Mode?
 
-Sandbox mode allows Gemini to write and test code in a secure, isolated environment without affecting your system.
+Sandbox mode allows Qwen to write and test code in a secure, isolated environment without affecting your system.
 
 ## Basic Usage
 
 ```
-/gemini-cli:sandbox create a Python script that sorts a list
+/qwen-code:sandbox create a Python script that sorts a list
 ```
 
 ## How It Works
@@ -23,17 +23,17 @@ Sandbox mode allows Gemini to write and test code in a secure, isolated environm
 
 ### Algorithm Testing
 ```
-/gemini-cli:sandbox implement and test quicksort in JavaScript
+/qwen-code:sandbox implement and test quicksort in JavaScript
 ```
 
 ### Data Processing
 ```
-/gemini-cli:sandbox parse this CSV and show statistics: [data]
+/qwen-code:sandbox parse this CSV and show statistics: [data]
 ```
 
 ### Proof of Concepts
 ```
-/gemini-cli:sandbox create a working web scraper example
+/qwen-code:sandbox create a working web scraper example
 ```
 
 ## Safety Features
@@ -92,15 +92,15 @@ show example requests and responses
 
 ### Testing Algorithms
 ```
-/gemini-cli:sandbox benchmark bubble sort vs quick sort with 1000 items
+/qwen-code:sandbox benchmark bubble sort vs quick sort with 1000 items
 ```
 
 ### Learning Code
 ```
-/gemini-cli:sandbox show me how promises work in JavaScript with examples
+/qwen-code:sandbox show me how promises work in JavaScript with examples
 ```
 
 ### Debugging
 ```
-/gemini-cli:sandbox why does this code fail: [paste code]
+/qwen-code:sandbox why does this code fail: [paste code]
 ```
