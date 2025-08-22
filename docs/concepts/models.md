@@ -4,19 +4,19 @@ Choose the right Qwen model for your task.
 
 ## Available Models
 
-### Qwen-Plus
+### qwen3-coder-plus
 - **Best for**: Complex analysis, large codebases
 - **Context**: Large context window
 - **Use when**: Analyzing entire projects, architectural reviews, stronger reasoning
 
-### Qwen-Turbo
+### qwen3-coder
 - **Best for**: Quick responses, routine tasks
 - **Context**: Large context window  
 - **Use when**: Fast code reviews, Analyzing entire projects, simple explanations
 
 ## Setting Models
 ```bash
-You need use natural language: "...using qwen turbo"
+You need use natural language: "...using qwen3-coder"
 ```
 ```bash
 You can also append with '-m' or ask specifically with 
@@ -29,7 +29,7 @@ You can also append with '-m' or ask specifically with
     "gemini-cli": {
       "command": "gemini-mcp",
       "env": {
-        "QWEN_MODEL": "qwen-turbo"
+        "QWEN_MODEL": "qwen3-coder"
       }
     }
   }
@@ -38,25 +38,25 @@ You can also append with '-m' or ask specifically with
 
 ### Per Request (Coming Soon)
 ```
-/qwen-code:analyze --model=turbo @file.js quick review
+/qwen-code:analyze --model=qwen3-coder @file.js quick review
 ```
 
 ## Model Comparison
 
 | Model | Speed | Context | Best Use Case |
 |-------|-------|---------|---------------|
-| Plus | Slower | Large context | big ideas |
-| Turbo | Fast | Large context | quick, specific changes |
+| qwen3-coder-plus | Slower | Large context | big ideas |
+| qwen3-coder | Fast | Large context | quick, specific changes |
 
 ## Cost Optimization
 
-1. **Start with Turbo** for most tasks
-2. **Use Plus** only when you need the full context
+1. **Start with qwen3-coder** for most tasks
+2. **Use qwen3-coder-plus** only when you need the full context
 
 ## Recommendations
 
-- **Code Review**: Turbo
-- **Architecture Analysis**: Plus
-- **Quick Fixes**: Turbo
-- **Documentation**: Turbo
-- **Security Audit**: Plus
+- **Code Review**: qwen3-coder
+- **Architecture Analysis**: qwen3-coder-plus
+- **Quick Fixes**: qwen3-coder
+- **Documentation**: qwen3-coder
+- **Security Audit**: qwen3-coder-plus

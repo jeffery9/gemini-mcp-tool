@@ -121,7 +121,7 @@ claude mcp add qwen-code -- npx qwen-mcp-tool
 
 2. **Switch to Gemini Flash for faster responses**:
    ```bash
-   qwen config set model qwen-turbo
+   qwen config set model qwen3-coder
    ```
 
 3. **Break up large requests into smaller chunks**:
@@ -333,7 +333,7 @@ qwen "Hello"
 /qwen-code:ping
 
 # Test file analysis with working model
-/qwen-code:analyze -m qwen-turbo @README.md summarize
+/qwen-code:analyze -m qwen3-coder @README.md summarize
 ```
 
 ## Platform-Specific Issues
