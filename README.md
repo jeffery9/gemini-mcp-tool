@@ -15,6 +15,11 @@
 
 This project is a fork of [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) by jamubc, adapted for Qwen Code.
 
+## 🌏 Languages
+
+- [English](README.md)
+- [中文](README.zh-CN.md)
+
 ## Supercharged Programming with Qwen Code
 
 Qwen Code is specifically designed for programming tasks, offering advanced capabilities in code generation, review, refactoring, and explanation. With this MCP tool, you can harness Qwen Code's powerful programming features directly from Claude.
