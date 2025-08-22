@@ -13,7 +13,7 @@
 
 > 📚 **[View Full Documentation](https://jamubc.github.io/qwen-mcp-tool/)** - Search me!, Examples, FAQ, Troubleshooting, Best Practices
 
-This is a simple Model Context Protocol (MCP) server that allows AI assistants to interact with the [Qwen CLI](https://help.aliyun.com/zh/qwen/). It enables the AI to leverage the power of Qwen's massive token window for large analysis, especially with large files and codebases using the `@` syntax for direction.
+This is a simple Model Context Protocol (MCP) server that allows AI assistants to interact with the [qwen code](https://help.aliyun.com/zh/qwen/). It enables the AI to leverage the power of Qwen's massive token window for large analysis, especially with large files and codebases using the `@` syntax for direction.
 
 - Ask Qwen natural questions, through claude or Brainstorm new ideas in a party of 3!
 
@@ -31,18 +31,18 @@ This is a simple Model Context Protocol (MCP) server that allows AI assistants t
 Before using this tool, ensure you have:
 
 1. **[Node.js](https://nodejs.org/)** (v16.0.0 or higher)
-2. **[Qwen CLI](https://help.aliyun.com/zh/qwen/)** installed and configured
+2. **[qwen code](https://help.aliyun.com/zh/qwen/)** installed and configured
 
 
 ### One-Line Setup
 
 ```bash
-claude mcp add qwen-cli -- npx -y qwen-mcp-tool
+claude mcp add qwen code -- npx -y qwen-mcp-tool
 ```
 
 ### Verify Installation
 
-Type `/mcp` inside Claude Code to verify the qwen-cli MCP is active.
+Type `/mcp` inside Claude Code to verify the qwen code MCP is active.
 
 ---
 
@@ -52,7 +52,7 @@ If you already have it configured in Claude Desktop:
 
 1. Add to your Claude Desktop config:
 ```json
-"qwen-cli": {
+"qwen code": {
   "command": "npx",
   "args": ["-y", "qwen-mcp-tool"]
 }
@@ -74,7 +74,7 @@ Add this configuration to your Claude Desktop config file:
 ```json
 {
   "mcpServers": {
-    "qwen-cli": {
+    "qwen code": {
       "command": "npx",
       "args": ["-y", "qwen-mcp-tool"]
     }
@@ -89,7 +89,7 @@ If you installed globally, use this configuration instead:
 ```json
 {
   "mcpServers": {
-    "qwen-cli": {
+    "qwen code": {
       "command": "qwen-mcp"
     }
   }
@@ -108,7 +108,7 @@ After updating the configuration, restart your terminal session.
 ## Example Workflow
 
 - **Natural language**: "use qwen to explain index.html", "understand the massive project using qwen", "ask qwen to search for latest news"
-- **Claude Code**: Type `/qwen-cli` and commands will populate in Claude Code's interface.
+- **Claude Code**: Type `/qwen code` and commands will populate in Claude Code's interface.
 
 ## Usage Examples
 
@@ -124,7 +124,7 @@ After updating the configuration, restart your terminal session.
 - `use qwen to explain div centering`
 - `ask qwen about best practices for React development related to @file_im_confused_about`
 
-### Using Qwen CLI's Sandbox Mode (-s)
+### Using qwen code's Sandbox Mode (-s)
 
 The sandbox mode allows you to safely test code changes, run scripts, or execute potentially risky operations in an isolated environment.
 
@@ -145,7 +145,7 @@ These tools are designed to be used by the AI assistant.
   - **`prompt`** (required): Code testing request (e.g., `Create and run a Python script that...` or `@script.py Run this safely`).
   - **`model`** (optional): The Qwen model to use.
 - **`Ping`**: A simple test tool that echoes back a message.
-- **`Help`**: Shows the Qwen CLI help text.
+- **`Help`**: Shows the qwen code help text.
 
 ### Slash Commands (for the User)
 
@@ -155,7 +155,7 @@ You can use these commands directly in Claude Code's interface (compatibility wi
   - **`prompt`** (required): The analysis prompt. Use `@` syntax to include files (e.g., `/analyze prompt:@src/ summarize this directory`) or ask general questions (e.g., `/analyze prompt:Please use a web search to find the latest news stories`).
 - **/sandbox**: Safely tests code or scripts in Qwen's sandbox environment.
   - **`prompt`** (required): Code testing request (e.g., `/sandbox prompt:Create and run a Python script that processes CSV data` or `/sandbox prompt:@script.py Test this script safely`).
-- **/help**: Displays the Qwen CLI help information.
+- **/help**: Displays the qwen code help information.
 - **/ping**: Tests the connection to the server.
   - **`message`** (optional): A message to echo back.
 
