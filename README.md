@@ -15,6 +15,10 @@
 
 This project is a fork of [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) by jamubc, adapted for Qwen Code.
 
+## Supercharged Programming with Qwen Code
+
+Qwen Code is specifically designed for programming tasks, offering advanced capabilities in code generation, review, refactoring, and explanation. With this MCP tool, you can harness Qwen Code's powerful programming features directly from Claude.
+
 > 📚 **[View Full Documentation](https://jamubc.github.io/qwen-mcp-tool/)** - Search me!, Examples, FAQ, Troubleshooting, Best Practices
 
 This is a simple Model Context Protocol (MCP) server that allows AI assistants to interact with the [Qwen Code](https://help.aliyun.com/zh/qwen/). It enables the AI to leverage the power of Qwen's massive token window for large analysis, especially with large files and codebases using the `@` syntax for direction.
@@ -36,6 +40,15 @@ Before using this tool, ensure you have:
 
 1. **[Node.js](https://nodejs.org/)** (v16.0.0 or higher)
 2. **[Qwen Code](https://help.aliyun.com/zh/qwen/)** installed and configured (command-line tool: `qwen`)
+
+### Qwen Code Programming Capabilities
+
+Qwen Code offers advanced programming capabilities:
+
+- **Code Generation**: Create code from natural language descriptions
+- **Code Review**: Analyze code for quality, performance, and security issues
+- **Code Refactoring**: Improve code structure and readability
+- **Code Explanation**: Understand complex code with detailed explanations
 
 
 ### One-Line Setup
@@ -139,12 +152,34 @@ The sandbox mode allows you to safely test code changes, run scripts, or execute
 
 ### Tools (for the AI)
 
-These tools are designed to be used by the AI assistant.
+These tools are designed to be used by the AI assistant, with enhanced programming capabilities.
 
 - **`ask-qwen`**: Asks Qwen for its perspective. Can be used for general questions or complex analysis of files.
   - **`prompt`** (required): The analysis request. Use the `@` syntax to include file or directory references (e.g., `@src/main.js explain this code`) or ask general questions (e.g., `Please use a web search to find the latest news stories`).
   - **`model`** (optional): The Qwen model to use. Defaults to `qwen-plus`.
   - **`sandbox`** (optional): Set to `true` to run in sandbox mode for safe code execution.
+- **`generate-code`**: Generates code based on a natural language description of the task.
+  - **`task`** (required): The coding task to perform (e.g., 'create a React component', 'write a Python function to sort a list')
+  - **`language`** (optional): Programming language to use (e.g., 'python', 'javascript', 'java', 'cpp')
+  - **`framework`** (optional): Framework or library to use (e.g., 'React', 'Vue', 'Django', 'Express')
+  - **`requirements`** (optional): Specific requirements or constraints for the code
+  - **`model`** (optional): The Qwen model to use. Defaults to `qwen-plus`.
+- **`review-code`**: Reviews code for quality, performance, security, and maintainability issues.
+  - **`code`** (required): The code to review
+  - **`language`** (optional): Programming language of the code (e.g., 'python', 'javascript', 'java', 'cpp')
+  - **`focus`** (optional): Focus area for the review ('quality', 'performance', 'security', 'maintainability', 'all'). Defaults to 'all'.
+  - **`styleGuide`** (optional): Specific style guide to follow (e.g., 'PEP8', 'Google JavaScript Style Guide')
+  - **`model`** (optional): The Qwen model to use. Defaults to `qwen-plus`.
+- **`refactor-code`**: Refactors code to improve its structure, readability, or performance.
+  - **`code`** (required): The code to refactor
+  - **`language`** (optional): Programming language of the code (e.g., 'python', 'javascript', 'java', 'cpp')
+  - **`goal`** (optional): The goal of the refactoring (e.g., 'improve readability', 'optimize performance', 'reduce complexity')
+  - **`model`** (optional): The Qwen model to use. Defaults to `qwen-plus`.
+- **`explain-code`**: Explains what a piece of code does and how it works.
+  - **`code`** (required): The code to explain
+  - **`language`** (optional): Programming language of the code (e.g., 'python', 'javascript', 'java', 'cpp')
+  - **`detailLevel`** (optional): Level of detail for the explanation ('brief', 'detailed', 'comprehensive'). Defaults to 'detailed'.
+  - **`model`** (optional): The Qwen model to use. Defaults to `qwen-plus`.
 - **`sandbox-test`**: Safely executes code or commands in Qwen's sandbox environment. Always runs in sandbox mode.
   - **`prompt`** (required): Code testing request (e.g., `Create and run a Python script that...` or `@script.py Run this safely`).
   - **`model`** (optional): The Qwen model to use.
@@ -162,6 +197,27 @@ You can use these commands directly in Claude Code's interface (compatibility wi
 - **/help**: Displays the Qwen Code help information.
 - **/ping**: Tests the connection to the server.
   - **`message`** (optional): A message to echo back.
+
+### Programming-Focused Slash Commands
+
+- **/generate-code**: Generates code from a natural language description.
+  - **`task`** (required): The coding task to perform
+  - **`language`** (optional): Programming language to use
+  - **`framework`** (optional): Framework or library to use
+  - **`requirements`** (optional): Specific requirements or constraints
+- **/review-code**: Reviews code for issues and improvements.
+  - **`code`** (required): The code to review
+  - **`language`** (optional): Programming language of the code
+  - **`focus`** (optional): Focus area for the review ('quality', 'performance', 'security', 'maintainability', 'all')
+  - **`styleGuide`** (optional): Specific style guide to follow
+- **/refactor-code**: Refactors code to improve its quality.
+  - **`code`** (required): The code to refactor
+  - **`language`** (optional): Programming language of the code
+  - **`goal`** (optional): The goal of the refactoring
+- **/explain-code**: Explains what a piece of code does.
+  - **`code`** (required): The code to explain
+  - **`language`** (optional): Programming language of the code
+  - **`detailLevel`** (optional): Level of detail for the explanation ('brief', 'detailed', 'comprehensive')
 
 ## Contributing
 
