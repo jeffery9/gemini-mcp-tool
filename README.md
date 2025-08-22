@@ -3,17 +3,21 @@
 
 <div align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/jamubc/qwen-mcp-tool?logo=github&label=GitHub)](https://github.com/jamubc/qwen-mcp-tool/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/jeffery9/qwen-mcp-tool?logo=github&label=GitHub)](https://github.com/jeffery9/qwen-mcp-tool/releases)
 [![npm version](https://img.shields.io/npm/v/qwen-mcp-tool)](https://www.npmjs.com/package/qwen-mcp-tool)
 [![npm downloads](https://img.shields.io/npm/dt/qwen-mcp-tool)](https://www.npmjs.com/package/qwen-mcp-tool)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red.svg)](https://github.com/jamubc/qwen-mcp-tool)
+[![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red.svg)](https://github.com/jeffery9/qwen-mcp-tool)
 
 </div>
 
 > 📚 **[View Full Documentation](./docs/index.md)** - Search me!, Examples, FAQ, Troubleshooting, Best Practices
 
 This project is a fork of [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) by jamubc, adapted for Qwen Code.
+
+## Repository
+
+The official repository for this project is hosted at: [https://github.com/jeffery9/qwen-mcp-tool.git](https://github.com/jeffery9/qwen-mcp-tool.git)
 
 ## 🌏 Languages
 
@@ -28,8 +32,8 @@ This is a simple Model Context Protocol (MCP) server that allows AI assistants t
 
 - Ask Qwen natural questions, through claude or Brainstorm new ideas in a party of 3!
 
-<a href="https://glama.ai/mcp/servers/@jamubc/qwen-mcp-tool">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@jamubc/qwen-mcp-tool/badge" alt="Qwen Tool MCP server" />
+<a href="https://glama.ai/mcp/servers/@jeffery9/qwen-mcp-tool">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@jeffery9/qwen-mcp-tool/badge" alt="Qwen Tool MCP server" />
 </a>
 
 ## TLDR: [![Claude](https://img.shields.io/badge/Claude-D97757?logo=claude&logoColor=fff)](#) + [![Qwen](https://img.shields.io/badge/Qwen-886FBF?logo=qwen&logoColor=fff)](#)
@@ -51,13 +55,13 @@ There are several ways to install and use this tool:
 ### 1. Direct Run with npx (Recommended)
 No installation needed - runs directly from GitHub:
 ```bash
-claude mcp add qwen-code -- npx jamubc/qwen-mcp-tool
+claude mcp add qwen-code -- npx jeffery9/qwen-mcp-tool
 ```
 
 ### 2. Clone and Install Locally
 ```bash
 # Clone the repository
-git clone https://github.com/jamubc/qwen-mcp-tool.git
+git clone https://github.com/jeffery9/qwen-mcp-tool.git
 cd qwen-mcp-tool
 
 # Install dependencies
@@ -71,7 +75,7 @@ npm link
 ```
 
 ### 3. Download Release
-Visit our [GitHub Releases](https://github.com/jamubc/qwen-mcp-tool/releases) page to download the latest version.
+Visit our [GitHub Releases](https://github.com/jeffery9/qwen-mcp-tool/releases) page to download the latest version.
 
 ### Qwen Code Programming Capabilities
 

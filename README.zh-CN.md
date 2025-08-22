@@ -2,17 +2,21 @@
 
 <div align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/jamubc/qwen-mcp-tool?logo=github&label=GitHub)](https://github.com/jamubc/qwen-mcp-tool/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/jeffery9/qwen-mcp-tool?logo=github&label=GitHub)](https://github.com/jeffery9/qwen-mcp-tool/releases)
 [![npm version](https://img.shields.io/npm/v/qwen-mcp-tool)](https://www.npmjs.com/package/qwen-mcp-tool)
 [![npm downloads](https://img.shields.io/npm/dt/qwen-mcp-tool)](https://www.npmjs.com/package/qwen-mcp-tool)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red.svg)](https://github.com/jamubc/qwen-mcp-tool)
+[![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red.svg)](https://github.com/jeffery9/qwen-mcp-tool)
 
 </div>
 
 > 📚 **[查看完整文档](./docs/index.md)** - 搜索功能、示例、常见问题、故障排除、最佳实践
 
 此项目是 [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) 的一个分支，由 jamubc 开发，已适配 Qwen Code。
+
+## 代码仓库
+
+本项目的官方代码仓库托管在：[https://github.com/jeffery9/qwen-mcp-tool.git](https://github.com/jeffery9/qwen-mcp-tool.git)
 
 ## 超强编程能力的 Qwen Code
 
@@ -32,13 +36,13 @@ Qwen Code 专为编程任务而设计，提供代码生成、审查、重构和�
 ### 1. 使用 npx 直接运行（推荐）
 无需安装，直接从 GitHub 运行：
 ```bash
-claude mcp add qwen-code -- npx jamubc/qwen-mcp-tool
+claude mcp add qwen-code -- npx jeffery9/qwen-mcp-tool
 ```
 
 ### 2. 克隆并本地安装
 ```bash
 # 克隆仓库
-git clone https://github.com/jamubc/qwen-mcp-tool.git
+git clone https://github.com/jeffery9/qwen-mcp-tool.git
 cd qwen-mcp-tool
 
 # 安装依赖
@@ -52,7 +56,7 @@ npm link
 ```
 
 ### 3. 下载发布版本
-访问我们的 [GitHub Releases](https://github.com/jamubc/qwen-mcp-tool/releases) 页面下载最新版本。
+访问我们的 [GitHub Releases](https://github.com/jeffery9/qwen-mcp-tool/releases) 页面下载最新版本。
 
 ### Qwen Code 编程能力
 
