@@ -30,7 +30,7 @@ import {
 const server = new Server(
   {
     name: "qwen-cli-mcp",
-    version: "1.1.4",
+    version: "0.0.1",
   },{
     capabilities: {
       tools: {},

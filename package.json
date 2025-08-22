@@ -1,6 +1,6 @@
 {
   "name": "qwen-mcp-tool",
-  "version": "1.1.4",
+  "version": "0.0.1",
   "description": "MCP server for Qwen CLI integration",
   "type": "module",
   "main": "dist/index.js",
