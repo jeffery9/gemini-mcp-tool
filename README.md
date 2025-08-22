@@ -11,7 +11,7 @@
 
 </div>
 
-> 📚 **[View Full Documentation](https://jamubc.github.io/qwen-mcp-tool/)** - Search me!, Examples, FAQ, Troubleshooting, Best Practices
+> 📚 **[View Full Documentation](./docs/index.md)** - Search me!, Examples, FAQ, Troubleshooting, Best Practices
 
 This project is a fork of [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) by jamubc, adapted for Qwen Code.
 
