@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { UnifiedTool } from './registry.js';
-import { executeQwenCLI, processChangeModeOutput } from '../utils/geminiExecutor.js';
+import { executeQwenCLI, processChangeModeOutput } from '../utils/qwenExecutor.js';
 import { 
   ERROR_MESSAGES, 
   STATUS_MESSAGES

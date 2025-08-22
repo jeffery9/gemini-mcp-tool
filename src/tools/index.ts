@@ -1,6 +1,6 @@
 // Tool Registry Index - Registers all tools
 import { toolRegistry } from './registry.js';
-import { askQwenTool } from './ask-gemini.tool.js';
+import { askQwenTool } from './ask-qwen.tool.js';
 import { pingTool, helpTool } from './simple-tools.js';
 import { brainstormTool } from './brainstorm.tool.js';
 import { fetchChunkTool } from './fetch-chunk.tool.js';

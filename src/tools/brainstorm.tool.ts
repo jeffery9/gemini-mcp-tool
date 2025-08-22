@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { UnifiedTool } from './registry.js';
 import { Logger } from '../utils/logger.js';
-import { executeQwenCLI } from '../utils/geminiExecutor.js';
+import { executeQwenCLI } from '../utils/qwenExecutor.js';
 
 function buildBrainstormPrompt(config: {
   prompt: string;
