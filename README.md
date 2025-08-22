@@ -31,18 +31,18 @@ This is a simple Model Context Protocol (MCP) server that allows AI assistants t
 Before using this tool, ensure you have:
 
 1. **[Node.js](https://nodejs.org/)** (v16.0.0 or higher)
-2. **[Qwen Code](https://help.aliyun.com/zh/qwen/)** installed and configured
+2. **[Qwen Code](https://help.aliyun.com/zh/qwen/)** installed and configured (command-line tool: `qwen`)
 
 
 ### One-Line Setup
 
 ```bash
-claude mcp add qwen code -- npx -y qwen-mcp-tool
+claude mcp add qwen-code -- npx -y qwen-mcp-tool
 ```
 
 ### Verify Installation
 
-Type `/mcp` inside Claude Code to verify the qwen code MCP is active.
+Type `/mcp` inside Claude Code to verify the Qwen Code MCP is active.
 
 ---
 
@@ -108,7 +108,7 @@ After updating the configuration, restart your terminal session.
 ## Example Workflow
 
 - **Natural language**: "use qwen to explain index.html", "understand the massive project using qwen", "ask qwen to search for latest news"
-- **Claude Code**: Type `/qwen code` and commands will populate in Claude Code's interface.
+- **Claude Code**: Type `/qwen-code` and commands will populate in Claude Code's interface.
 
 ## Usage Examples
 
