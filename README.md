@@ -52,7 +52,7 @@ If you already have it configured in Claude Desktop:
 
 1. Add to your Claude Desktop config:
 ```json
-"qwen code": {
+"qwen-code": {
   "command": "npx",
   "args": ["-y", "qwen-mcp-tool"]
 }
@@ -74,7 +74,7 @@ Add this configuration to your Claude Desktop config file:
 ```json
 {
   "mcpServers": {
-    "qwen code": {
+    "qwen-code": {
       "command": "npx",
       "args": ["-y", "qwen-mcp-tool"]
     }
@@ -89,7 +89,7 @@ If you installed globally, use this configuration instead:
 ```json
 {
   "mcpServers": {
-    "qwen code": {
+    "qwen-code": {
       "command": "qwen-mcp"
     }
   }
