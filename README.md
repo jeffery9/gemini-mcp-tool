@@ -19,8 +19,6 @@ This project is a fork of [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp
 
 Qwen Code is specifically designed for programming tasks, offering advanced capabilities in code generation, review, refactoring, and explanation. With this MCP tool, you can harness Qwen Code's powerful programming features directly from Claude.
 
-> 📚 **[View Full Documentation](https://jamubc.github.io/qwen-mcp-tool/)** - Search me!, Examples, FAQ, Troubleshooting, Best Practices
-
 This is a simple Model Context Protocol (MCP) server that allows AI assistants to interact with the [Qwen Code](https://help.aliyun.com/zh/qwen/). It enables the AI to leverage the power of Qwen's massive token window for large analysis, especially with large files and codebases using the `@` syntax for direction.
 
 - Ask Qwen natural questions, through claude or Brainstorm new ideas in a party of 3!
