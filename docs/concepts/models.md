@@ -2,6 +2,8 @@
 
 Choose the right Qwen model for your task.
 
+The Qwen models used by this tool are part of the [Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder) series, which are specifically designed for code-related tasks.
+
 ## Available Models
 
 ### qwen3-coder-plus
